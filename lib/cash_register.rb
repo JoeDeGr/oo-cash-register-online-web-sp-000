@@ -11,9 +11,9 @@ class CashRegister
     @items=[]
   end
 
-  def total
-    @total
-  end
+  # def total
+  #   @total
+  # end
   def add_item (title, price, quantity = 1)
     counter = quantity
     while counter > 0 do
@@ -32,9 +32,9 @@ class CashRegister
       "After the discount, the total comes to $#{@total}."
     end
   end
-  def items
-    @items
-  end
+  # def items
+  #   @items
+  # end
   def void_last_transaction
     self.total -= self.last_trans
   end
