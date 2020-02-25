@@ -25,8 +25,8 @@ class CashRegister
   end
   def apply_discount
     #discount = number_to_percentage(@discount)
-    self.total = self.total - (self.total*@discount/100)
-    if self.total == 0 || @discount == 0
+    self.total = self.total - (self.total*self.discount/100)
+    if self.total == 0 || self.discount == 0
       "There is no discount to apply."
     else
       "After the discount, the total comes to $#{@total}."
