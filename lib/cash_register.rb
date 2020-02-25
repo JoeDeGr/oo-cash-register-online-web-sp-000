@@ -20,8 +20,8 @@ class CashRegister
       @items << title
       counter -= 1
     end
-    @total += price*quantity
-    @last_trans = price*quantity
+    self.total += price*quantity
+    self.last_trans = price*quantity
   end
   def apply_discount
     #discount = number_to_percentage(@discount)
